@@ -1,4 +1,4 @@
-<h1 align="center">🌐 SunmoonTalk 랜덤 채팅 웹 애플리케이션 ( 2023.06 )</h1>
+<h1 align="center">🌐 SunmoonTalk 랜덤 채팅 웹 애플리케이션 ( 2023. 06. )</h1>
 
 <p align="center">
   익명의 사용자와 랜덤 매칭을 통해 실시간 채팅<br>
