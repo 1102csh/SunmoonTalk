@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <link href="../css/community.css" rel="stylesheet">
+    <link href="../css/main.css" rel="stylesheet">
+    <script src="../js/main.js"></script>
+</head>
+
+<body>
+    <div class="container">
+        <div class="postCommentWrap">
+            <span id="nickname"></span>
+            <span class="LengthWrap"><span id="textLength">0</span>/<span id="maxLength">200</span></span>
+            <textarea id="comment" autocomplete="off" placeholder="글을 남겨보세요" oninput="updateTextLength()"></textarea>
+            <input class="addBtn" type="button" value="등록" onclick="sendPost()">
+        </div>
+        <div id="commentNav"></div>
+        <div id="readCommentWrap"></div>
+    </div>
+    <script src="../js/community.js"></script>
+</body>
+</html>

@@ -1,0 +1,140 @@
+html{
+    font-family: omyu_pretty;
+}
+input{
+    font-family: omyu_pretty;
+    font-size:1.5em;
+}
+.container{
+    position:absolute;
+    width:70%;
+    height: 98%;
+    margin-left: 14.5%;
+
+    display: flex;
+    justify-content: center;
+}
+.postCommentWrap{
+    position: absolute;
+    border:1px solid lightgray;
+    width: 93%;
+    height: 20%;
+    border-radius: 15px;
+}
+#nickname{
+    position:absolute;
+    font-size:1.3em;
+    font-weight: bold;
+    left:1em;
+    top:0.3em;
+}
+#comment{
+    position: relative;
+    font-size:1.3em;
+    font-family: "omyu_pretty";
+    margin-left: 0.5em;
+    margin-top: 1.5em;
+    padding-left: 0.5em;
+    padding-right: 2em;
+    width:91%;
+    height:70%;
+    resize:none;
+    border:1px solid transparent;
+}
+#comment::-webkit-scrollbar {
+    display: block;
+    width:8px;
+}
+#comment::-webkit-scrollbar-thumb {
+    background-color: lightgray;
+    border-radius: 10px;
+}
+#comment:focus{
+    outline: none;
+}
+.LengthWrap{
+    position: absolute;
+    right:1em;
+    top:0.5em;
+    color:darkgray;
+}
+.addBtn{
+    position:absolute;
+    border: none;
+    background-color: transparent;
+    bottom:0.5em;
+    right:0.8em;
+    cursor:pointer;
+}
+.addBtn:hover{
+    color:gray;
+}
+#readCommentWrap{
+    position:relative;
+    width:93.5%;
+    margin-top: 12.5em;
+    display: flex;
+    flex-direction: column;
+}
+.commentWrap{
+    position:relative;
+    background-color: lightgray;
+    border-radius: 15px;
+    padding: 1em;
+
+    display: flex;
+    flex-wrap: wrap;
+    font-size: 1.3em;
+    margin-bottom: 1em;
+    width:95%;
+}
+.commentWrap .commentAuthor{
+    position: relative;
+    font-weight: bold;
+    top:0.2em;
+    width:20%;
+}
+.commentWrap .commentDate{
+    position:relative;
+    width:20%;
+    color:darkgray;
+    top:0.2em;
+}
+.commentWrap .commentContent{
+    position: relative;
+    margin-top: 0.8em;
+    width:100%;
+}
+.commentWrap .commentDelete{
+    position: absolute;
+    margin-top: 0.1em;
+    margin-left: 90%;
+    width: 5%;
+    color:red;
+    cursor:pointer;
+    display:none;
+}
+
+body::-webkit-scrollbar {
+    display: block;
+    width:10px;
+}
+body::-webkit-scrollbar-thumb {
+    background-color: darkgray;
+    border-radius: 10px;
+}
+
+#commentNav{
+    position: absolute;
+    width:92%;
+    top:9.9em;
+    height:2em;
+    text-align: center;
+}
+.navBtn{
+    position: relative;
+    font-size: 1.3em;
+    margin-left: 0.5em;
+    margin-right: 0.5em;
+    cursor:pointer;
+}

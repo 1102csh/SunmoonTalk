@@ -1,0 +1,212 @@
+html {
+    font-family: "omyu_pretty";
+}
+:root{
+    --background-color: aliceblue; /* 기본 배경 색상 */
+    --chatmine : yellow;
+    --chatother : white;
+    --chatoutput : black;
+    --chatnotice : gray;
+    --chatUsername : black;
+}
+.root.darkmode{
+    --background-color: #4c4c4c; /* 기본 배경 색상 */
+    --chatmine : #007bff;
+    --chatother : #f1f1f1;
+    --chatnotice : white;
+    --chatUsername : white;
+}
+#chat_Input {
+    position: absolute;
+    border: none;
+    width: 74%;
+    height: 5%;
+    min-height: 1.5em;
+    padding-left: 0.5em;
+    font-family: omyu_pretty;
+
+    left: 2.5%;
+    bottom: 2%;
+    font-size: 1.5em;
+    margin-left: 10%;
+}
+
+#chat_Input:focus {
+    outline: none;
+}
+
+#chatLog {
+    position: absolute;
+    width: 75%;
+    height: 90%;
+
+    left: 2.5%;
+    top: 1%;
+
+    overflow-y: auto;
+    overflow-x: hidden;
+    background-color: var(--background-color);
+    border-radius: 30px;
+    display: flex;
+    flex-direction: column;
+    margin-left: 10%;
+}
+
+#chatLog::-webkit-scrollbar {
+    display: block;
+}
+
+#chatLog::-webkit-scrollbar-thumb {
+    background-color: lightgray;
+    border-radius: 10px;
+}
+
+.chat_message_wrap {
+    margin-top: 0.7em;
+    margin-bottom: 0.7em;
+}
+
+.chat_message_wrap .chat_message_mine {
+    margin-right: 1em;
+}
+.chat_message_wrap .chat_message_other{
+    margin-left: 1em;
+}
+.chat_message_mine {
+    position:relative;
+    display: flex;
+    justify-content: flex-end;
+    align-items: flex-end;
+    /*margin-bottom: 5px;*/
+}
+
+.chat_message_mine::before {
+    content:'';
+    position:absolute;
+    background-color: var(--chatmine);
+
+    font-size:1em;
+    width:0.7em;
+    height:0.7em;
+    right:3.5em;
+    bottom:1.2em;
+    clip-path: polygon(100% 50%, 0 0, 0 100%);
+}
+
+.chat_message_mine .chat_output {
+    background-color: var(--chatmine);
+    color: var(--chatoutput);
+    padding: 0.5em;
+    border-radius: 15px;
+    max-width: 70%;
+    font-size: 1.5em;
+    white-space: break-spaces;
+    word-break: break-all;
+}
+
+.chat_message_mine .chat_time {
+    color: lightgray;
+    font-size: 1em;
+    margin-right: 10px;
+    margin-bottom: 10px;
+}
+
+.chat_message_other {
+    position: relative;
+    display: flex;
+    justify-content: flex-start;
+    align-items: flex-start;
+    /*margin-bottom: 5px;*/
+}
+
+.chat_message_other::before {
+    content: '';
+    position: absolute;
+    background-color: var(--chatother);
+
+    font-size: 1em;
+    width: 0.7em;
+    height: 0.7em;
+    left: 3.5em;
+    top: 1.2em;
+    clip-path: polygon(0 50%, 100% 0, 100% 100%);
+}
+
+.chat_message_other .chat_output {
+    background-color: var(--chatother);
+    color: var(--chatoutput);
+    padding: 0.5em;
+    border-radius: 15px;
+    max-width: 70%;
+    font-size: 1.5em;
+    white-space: break-spaces;
+    word-break: break-all;
+}
+
+.chat_message_other .chat_time {
+    color: lightgray;
+    font-size: 1em;
+    margin-left: 10px;
+    margin-top: 10px;
+}
+
+.chat_username {
+    position: absolute;
+    color: var(--chatUsername);
+    font-size: 1em;
+    top: -1.1em;
+    left: -0.5em;
+    font-size:1.1em;
+    width: 4em;
+    text-align: center;
+}
+.darkmode .chat_username {
+    background-color: transparent;
+    color: darkgray;
+} 
+
+.chat_notice {
+    position: relative;
+    font-size: 1.5em;
+    color: gray;
+    left: 1em;
+    top: 0.15em;
+}
+
+.darkmode {
+    --background-color: #4c4c4c;
+    --chatmine: #007bff;
+    --chatother: #f1f1f1;
+    --chatoutput: white;
+  }
+  .darkmode #chatLog {
+    background-color: var(--background-color);
+  }
+  
+  .darkmode .chat_message_mine .chat_output {
+    background-color: var(--chatmine);
+  }
+  
+  .darkmode .chat_message_other .chat_output {
+    background-color: var(--chatother);
+    color: black;
+  } 
+
+  .chat_message_mine .chat_profile{
+    border: 1px solid white;
+    border-radius: 10px;
+    width:3em;
+    height:3em;
+    margin-left:1em;
+  }
+  .chat_message_other .chat_profile{
+    border: 1px solid white;
+    border-radius: 10px;
+    width:3em;
+    height:3em;
+    margin-right:1em;
+  }
+  .Imgprofile{
+    width:3em;
+    height:3em;
+  }

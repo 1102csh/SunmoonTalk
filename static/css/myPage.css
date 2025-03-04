@@ -1,0 +1,122 @@
+.wrap{
+    position: absolute;
+    width: 90%;
+    height: 80%;
+
+    margin-left:3em;
+    margin-top:3em;
+    font-family: SUNMOON;
+    display:inline-block;
+}
+.myPageLogo{
+    position:relative;
+    font-size:2em;
+    font-weight:bold;
+    color:gray;
+    width:50%;
+}
+.label{
+    position:relative;
+    display: inline-block;
+    font-weight: bold;
+    font-size:1.3em;
+    width:75%;
+    height:5%;
+    margin-top:2em;
+    margin-left:3em;
+    border-bottom:1px solid lightgray;
+}
+.label2{
+    position:relative;
+    display: inline-block;
+    font-size:1.2em;
+    width:80%;
+    height:5%;
+    margin-top:0.5em;
+    margin-left:5em;
+    color:gray;
+}
+.btn{
+    position:relative;
+    border:1px solid lightgray;
+    background-color: darkgray;
+    color:black;
+    font-size:1.2em;
+    width:6em;
+    height:1.8em;
+    right:0%;
+    cursor:pointer;
+    transition:all ease 0.2s;
+    font-family: SUNMOON;
+}
+.btn:hover{
+    background-color: gray;
+}
+.nick,.pw{
+    right:6.25em;
+}
+.wrap .row:nth-last-of-type(1){
+    top:25em;
+}
+.logout{
+    position:absolute;
+    top:0em;
+    right:6.5em;
+}
+
+[type="checkbox"] {
+    appearance: none;
+}
+
+[type="checkbox"] {
+    appearance: none;
+    position: relative;
+    border: max(2px, 0.1em) solid gray;
+    border-radius: 1.25em;
+    width: 2.25em;
+    height: 1.25em;
+}
+
+[type="checkbox"]::before {
+    content: "";
+    position: absolute;
+    left: 0;
+    width: 1em;
+    height: 1em;
+    border-radius: 50%;
+    transform: scale(0.8);
+    background-color: gray;
+    transition: left 250ms linear;
+}
+
+[type="checkbox"]:checked::before {
+    background-color: white;
+    left: 1em;
+}
+
+[type="checkbox"]:checked {
+    background-color: gray;
+    border-color: gray;
+}
+#togglebtn{
+    font-size: 1.1em;
+    cursor:pointer;
+}
+#newPw,#newPwConfirm,#newNickname{
+    position: relative;
+    font-family: SUNMOON;
+    font-size:1.1em;
+    padding-left:0.5em;
+    padding-bottom: 0.25em;
+    width:12em;
+    margin-left: 2em;
+    border: none;
+    border-bottom: 1px solid lightgray;
+    margin-top:1em;
+}
+#newPw,#newNickname{
+    margin-left: 5em;
+}
+#newPw:focus,#newPwConfirm:focus,#newNickname:focus{
+    outline: none;
+}
