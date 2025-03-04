@@ -208,7 +208,7 @@ app.post('/send-findAccount', (req, res) => {
         }
       });
       const mailOptions = {
-        from: 'molly724@naver.com', // 보내는 사람 이메일 주소
+        from: '', // 보내는 사람 이메일 주소
         to: email, // 받는 사람 이메일 주소
         subject: '선문톡에서 보낸 계정 정보입니다.', // 이메일 제목
         text: `아이디: ${username}\n비밀번호: ${password}` // 이메일 내용
