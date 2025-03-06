@@ -1,6 +1,7 @@
 <h1 align="center">🌐 SunmoonTalk 랜덤 채팅 웹 애플리케이션 ( 2023. 06. )</h1>
 
 <p align="center">
+  개발 인원 : 2명<br>
   익명의 사용자와 랜덤 매칭을 통해 실시간 채팅<br>
   <strong>회원가입, 이메일 인증, 욕설 필터링, 통계 기능까지 갖춘 웹 기반 랜덤 채팅 서비스</strong>
 </p>
@@ -67,6 +68,14 @@
 </table>
 
 <hr>
+
+<h2>담당 업무</h2>
+웹 UI 구현
+NodeMailer를 사용한 이메일 인증 코드 발송 구현
+Nodejs를 사용한 서버-클라이언트 구조 구현
+유저 간 채팅 기능 구현
+유저 간 1:1 랜덤 채팅 구현
+미니 게시판 구현
 
 <h2>📌 프로젝트 미리보기</h2>
 https://www.youtube.com/watch?v=UpGucglpC-I
