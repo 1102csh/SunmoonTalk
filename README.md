@@ -1,6 +1,7 @@
-<h1 align="center">🌐 SunmoonTalk 랜덤 채팅 웹 애플리케이션 ( 2023. 06. )</h1>
+<h1 align="center">🌐 랜덤 채팅 웹 애플리케이션 ( 2023. 06. )</h1>
 
 <p align="center">
+  프로젝트 명 : SunmoonTalk
   개발 인원 : 2명<br>
   익명의 사용자와 랜덤 매칭을 통해 실시간 채팅<br>
   <strong>회원가입, 이메일 인증, 욕설 필터링, 통계 기능까지 갖춘 웹 기반 랜덤 채팅 서비스</strong>
